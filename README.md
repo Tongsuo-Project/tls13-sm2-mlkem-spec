@@ -6,7 +6,7 @@ IETF has paid lots of attention in the application of post-quantum cryptography 
 
 Meanwhile in China, the SM algorithms are also being mandatory applied due to compliance considerations.
 
-The repository hosts the IETF Internet-Draft (I-D) of a hybrid approach of key exchange combining SM algorithm and FIPS ML-KEM
+The repository hosts the IETF Internet-Draft (I-D) of a hybrid post-quantum approach of key exchange combining SM algorithm and FIPS ML-KEM
 in TLSv1.3 and related helper documentation/tools.
 
 This I-D defines a hybrid key exchange method CurveSM2-MLKEM, which is effectivley a new type of TLS supported group item.
