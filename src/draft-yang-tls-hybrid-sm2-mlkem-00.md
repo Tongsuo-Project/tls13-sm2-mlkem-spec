@@ -1,6 +1,6 @@
 ---
-title: Hybrid Post-quantum Key Agreement SM2-MLKEM for TLSv1.3
-abbrev: TLSv1.3 hybrid SM2-MLKEM Key Agreement
+title: Hybrid Post-quantum Key Exchange SM2-MLKEM for TLSv1.3
+abbrev: TLSv1.3 hybrid SM2-MLKEM Key Exchange
 docname: draft-yang-tls-hybrid-sm2-mlkem-00
 date: 2025-01-08
 
@@ -30,7 +30,7 @@ author:
         country: China
         phone: +86-571-2688-8888
         facsimile: +86-571-8643-2811
-        email: kaishen.yy@antfin.com
+        email: kaishen.yy@alipay.com
       -
         ins: P. Holder
         name: Place Holder
@@ -41,7 +41,7 @@ author:
         country: China
         phone: +86-571-2688-8888
         facsimile: +86-571-8643-2811
-        email: kaishen.yy@antfin.com
+        email: kaishen.yy@alipay.com
 
 normative:
   RFC2119:
