@@ -15,20 +15,13 @@ It's appreciated to have more organizations as well as individuals to co-operate
 
 ## The Draft
 
-Following what IETF requires, the draft's named as: [draft-yang-tls-hybrid-sm2-mlkem](https://tools.ietf.org/doc/draft-yang-tls-hybrid-sm2-mlkem)
+Following what IETF requires, the draft's named as: draft-yang-tls-hybrid-sm2-mlkem
 
-TODO: update the links after the draft is submitted to IETF....
-
-Reference to different formats of the compiled draft:
-
-* [TXT](https://tools.ietf.org/id/draft-yang-tls-tls13-sm-suites-00.txt)
-* [HTML](https://tools.ietf.org/html/draft-yang-tls-tls13-sm-suites-00)
-
-Data Tracker on IETF: [https://datatracker.ietf.org/doc/draft-yang-tls-tls13-sm-suites/](https://datatracker.ietf.org/doc/draft-yang-tls-tls13-sm-suites/)
+Data Tracker on IETF: [https://datatracker.ietf.org/doc/draft-yang-tls-hybrid-sm2-mlkem/](https://datatracker.ietf.org/doc/draft-yang-tls-hybrid-sm2-mlkem/)
 
 ## Participation
 
-Both the official IETF [TLS WG mailing list](https://www.ietf.org/mailman/listinfo/tls) and the [Issues](https://github.com/alipay/tls13-sm-spec/issues) section of this repository would be nice places for any comments or discussions.
+Both the official IETF [TLS WG mailing list](https://www.ietf.org/mailman/listinfo/tls) and the [Issues](https://github.com/Tongsuo-Project/tls13-sm2-mlkem-spec/issues) section of this repository would be nice places for any comments or discussions.
 
 ## Build the Draft
 
