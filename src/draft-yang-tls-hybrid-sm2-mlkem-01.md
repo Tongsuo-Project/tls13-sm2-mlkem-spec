@@ -1,8 +1,8 @@
 ---
 title: Hybrid Post-quantum Key Exchange SM2-MLKEM for TLSv1.3
 abbrev: TLSv1.3 hybrid SM2-MLKEM Key Exchange
-docname: draft-yang-tls-hybrid-sm2-mlkem-00
-date: 2025-01-08
+docname: draft-yang-tls-hybrid-sm2-mlkem-01
+date: 2025-02-10
 
 stand_alone: no
 
@@ -41,6 +41,26 @@ author:
         country: China
         phone: +86-186-7403-6424
         email: cpeng@whu.edu.cn
+      -
+        ins: J. Hu
+        name: Jin Hu
+        org: Infosec
+        street: Haidian District
+        city: Beijing
+        code: 100096
+        country: China
+        phone: +86-158-7172-6539
+        email: hujin@infosec.com.cn
+      -
+        ins: S. Sun
+        name: Shine Sun
+        org: Goodix
+        street: No.1 Meikang Road,Futian District
+        city: Shenzhen
+        code: 518000
+        country: China
+        phone: +86-138-7138-9521
+        email: sunjinlong@goodix.com
 
 normative:
   RFC2119:
@@ -134,6 +154,15 @@ ML-KEM768 ({{FIPS203}}):
 This new NamedGroup uses an elliptic curve called curveSM2 which is defined in SM2 related
 standards. Those standards are either published by international standard organizations
 or by Chinese standard organizations. Please read {{sm2-curve}}.
+
+Since IANA has not assigned a value for the newly introduced NamedGroup item, a reserved value
+for private usage is temporarily used in this document at current stage. This value is for testing
+purpose only.
+
+~~~~~~~~
+   NamedGroup curveSM2MLKEM768 = { 0xFEFE };
+~~~~~~~~
+
 
 The SM2 Elliptic Curve    {#sm2-curve}
 -------------------
@@ -271,8 +300,19 @@ related methods.
 IANA Considerations
 ===================
 
+IANI has not assigned a value for the name 'curveSM2MLKEM768' yet. One suggestion from IANA expert
+is to use a temporary value reserved for private usage at current stage. Thus implementations can
+move forward to test the interoperability. So the value in the following table MUST NOT used in
+any production environment. The temporary value is as follows:
+
+| Value  |     Description     | DTLS-OK | Recommended | Reference |
+|-------:+---------------------+---------+-------------+-----------|
+| 0xFEFE |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
+
+After IANA assigns the real value. The above description should be changed to:
+
 IANA has assigned the value XX with the name 'curveSM2MLKEM768', to the
-"TLS Supported Groups" registry:
+"TLS Supported Groups" registry:'
 
 | Value |     Description     | DTLS-OK | Recommended | Reference |
 |------:+---------------------+---------+-------------+-----------|
