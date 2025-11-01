@@ -1,8 +1,8 @@
 ---
 title: Hybrid Post-quantum Key Exchange SM2-MLKEM for TLSv1.3
 abbrev: TLSv1.3 hybrid SM2-MLKEM Key Exchange
-docname: draft-yang-tls-hybrid-sm2-mlkem-01
-date: 2025-02-10
+docname: draft-yang-tls-hybrid-sm2-mlkem-02
+date: 2025-11-01
 
 stand_alone: no
 
@@ -23,14 +23,14 @@ author:
       -
         ins: P. Yang
         name: Paul Yang
-        org: Ant Group
-        street: A Space, No. 569 Xixi Road,
-        city: Hangzhou
-        code: 310000
+        org: Lenovo
+        street: Building 2, No.10 Courtyard Xibeiwang East Road, Haidian District
+        city: Beijing
+        code: 100085
         country: China
-        phone: +86-571-2688-8888
-        facsimile: +86-571-8643-2811
-        email: kaishen.yy@alipay.com
+        phone: +86-10-5886-8888
+        facsimile: +86-10-5886-6630
+        email: yangyang86@lenovo.com
       -
         ins: C. Peng
         name: Cong Peng
