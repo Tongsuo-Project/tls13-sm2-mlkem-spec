@@ -1,8 +1,8 @@
 ---
 title: Hybrid Post-quantum Key Exchange SM2-MLKEM for TLSv1.3
 abbrev: TLSv1.3 hybrid SM2-MLKEM Key Exchange
-docname: draft-yang-tls-hybrid-sm2-mlkem-02
-date: 2025-11-01
+docname: draft-yang-tls-hybrid-sm2-mlkem-03
+date: 2025-11-15
 
 stand_alone: no
 
@@ -148,21 +148,12 @@ TLSv1.3, to achieve a hybrid key exchange in combination with the post-quantum k
 ML-KEM768 ({{FIPS203}}):
 
 ~~~~~~~~
-   NamedGroup curveSM2MLKEM768 = { XX };
+   NamedGroup curveSM2MLKEM768 = { 4590 (0x11EE) };
 ~~~~~~~~
 
 This new NamedGroup uses an elliptic curve called curveSM2 which is defined in SM2 related
 standards. Those standards are either published by international standard organizations
 or by Chinese standard organizations. Please read {{sm2-curve}}.
-
-Since IANA has not assigned a value for the newly introduced NamedGroup item, a reserved value
-for private usage is temporarily used in this document at current stage. This value is for testing
-purpose only.
-
-~~~~~~~~
-   NamedGroup curveSM2MLKEM768 = { 0xFEFE };
-~~~~~~~~
-
 
 The SM2 Elliptic Curve    {#sm2-curve}
 -------------------
@@ -300,23 +291,12 @@ related methods.
 IANA Considerations
 ===================
 
-IANI has not assigned a value for the name 'curveSM2MLKEM768' yet. One suggestion from IANA expert
-is to use a temporary value reserved for private usage at current stage. Thus implementations can
-move forward to test the interoperability. So the value in the following table MUST NOT used in
-any production environment. The temporary value is as follows:
-
-| Value  |     Description     | DTLS-OK | Recommended | Reference |
-|-------:+---------------------+---------+-------------+-----------|
-| 0xFEFE |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
-
-After IANA assigns the real value. The above description should be changed to:
-
-IANA has assigned the value XX with the name 'curveSM2MLKEM768', to the
+IANA has assigned the value 4590 (0x11EE) with the name 'curveSM2MLKEM768', to the
 "TLS Supported Groups" registry:'
 
 | Value |     Description     | DTLS-OK | Recommended | Reference |
 |------:+---------------------+---------+-------------+-----------|
-|  XX   |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
+| 4590 (0x11EE)  |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
 
 
 Security Considerations
@@ -326,10 +306,3 @@ At the time of writing, there are no security issues
 have been found for relevant algorithms.
 
 --- back
-
-Contributors
-===============
-
-Place Holder  
-Ant Group  
-place.holder@antfin.com  
