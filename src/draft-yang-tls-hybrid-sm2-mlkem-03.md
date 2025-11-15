@@ -148,21 +148,12 @@ TLSv1.3, to achieve a hybrid key exchange in combination with the post-quantum k
 ML-KEM768 ({{FIPS203}}):
 
 ~~~~~~~~
-   NamedGroup curveSM2MLKEM768 = { XX };
+   NamedGroup curveSM2MLKEM768 = { 4590 (0x11EE) };
 ~~~~~~~~
 
 This new NamedGroup uses an elliptic curve called curveSM2 which is defined in SM2 related
 standards. Those standards are either published by international standard organizations
 or by Chinese standard organizations. Please read {{sm2-curve}}.
-
-Since IANA has not assigned a value for the newly introduced NamedGroup item, a reserved value
-for private usage is temporarily used in this document at current stage. This value is for testing
-purpose only.
-
-~~~~~~~~
-   NamedGroup curveSM2MLKEM768 = { 0xFEFE };
-~~~~~~~~
-
 
 The SM2 Elliptic Curve    {#sm2-curve}
 -------------------
@@ -300,12 +291,12 @@ related methods.
 IANA Considerations
 ===================
 
-IANA has assigned the value 4590 with the name 'curveSM2MLKEM768', to the
+IANA has assigned the value 4590 (0x11EE) with the name 'curveSM2MLKEM768', to the
 "TLS Supported Groups" registry:'
 
 | Value |     Description     | DTLS-OK | Recommended | Reference |
 |------:+---------------------+---------+-------------+-----------|
-| 4590  |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
+| 4590 (0x11EE)  |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
 
 
 Security Considerations
