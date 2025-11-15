@@ -1,8 +1,8 @@
 ---
 title: Hybrid Post-quantum Key Exchange SM2-MLKEM for TLSv1.3
 abbrev: TLSv1.3 hybrid SM2-MLKEM Key Exchange
-docname: draft-yang-tls-hybrid-sm2-mlkem-02
-date: 2025-11-01
+docname: draft-yang-tls-hybrid-sm2-mlkem-03
+date: 2025-11-15
 
 stand_alone: no
 
@@ -300,23 +300,12 @@ related methods.
 IANA Considerations
 ===================
 
-IANI has not assigned a value for the name 'curveSM2MLKEM768' yet. One suggestion from IANA expert
-is to use a temporary value reserved for private usage at current stage. Thus implementations can
-move forward to test the interoperability. So the value in the following table MUST NOT used in
-any production environment. The temporary value is as follows:
-
-| Value  |     Description     | DTLS-OK | Recommended | Reference |
-|-------:+---------------------+---------+-------------+-----------|
-| 0xFEFE |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
-
-After IANA assigns the real value. The above description should be changed to:
-
-IANA has assigned the value XX with the name 'curveSM2MLKEM768', to the
+IANA has assigned the value 4590 with the name 'curveSM2MLKEM768', to the
 "TLS Supported Groups" registry:'
 
 | Value |     Description     | DTLS-OK | Recommended | Reference |
 |------:+---------------------+---------+-------------+-----------|
-|  XX   |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
+| 4590  |  curveSM2MLKEM768   |   No    |     No      | this RFC  |
 
 
 Security Considerations
@@ -326,10 +315,3 @@ At the time of writing, there are no security issues
 have been found for relevant algorithms.
 
 --- back
-
-Contributors
-===============
-
-Place Holder  
-Ant Group  
-place.holder@antfin.com  
